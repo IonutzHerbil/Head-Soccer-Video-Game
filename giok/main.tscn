@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ronaldo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Zlatan.tscn" type="PackedScene" id=3]
+[ext_resource path="res://poarta dr.tscn" type="PackedScene" id=4]
+[ext_resource path="res://poarta.tscn" type="PackedScene" id=5]
+[ext_resource path="res://tile.tscn" type="PackedScene" id=6]
+[ext_resource path="res://RigidBody2D.tscn" type="PackedScene" id=7]
+
+[node name="main" type="Node2D"]
+
+[node name="background" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9, -3 )
+
+[node name="minge" parent="background" instance=ExtResource( 7 )]
+position = Vector2( 74, -218 )
+
+[node name="tile" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4, 18 )
+
+[node name="Zlatan" parent="." instance=ExtResource( 3 )]
+position = Vector2( 118, -110 )
+
+[node name="ronaldo" parent="." instance=ExtResource( 1 )]
+position = Vector2( 285, 176 )
+
+[node name="poarta dr" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5, -106 )
+
+[node name="poarta" parent="." instance=ExtResource( 5 )]
+position = Vector2( -9, -108 )

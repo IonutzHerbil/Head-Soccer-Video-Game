@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://personagi/stadion.PNG" type="Texture" id=1]
+
+[node name="background" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1023.0
+margin_bottom = 455.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stadion" type="Sprite" parent="TextureRect"]
+position = Vector2( 505.5, 248.25 )
+scale = Vector2( 0.919964, 1.17554 )
+texture = ExtResource( 1 )
